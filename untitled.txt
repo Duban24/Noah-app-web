@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOAH - Comparador de Precios</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo de estilos -->
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a NOAH</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#como-funciona">Cómo funciona</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h2>¿Qué es NOAH?</h2>
+        <p>NOAH es una app que te permite comparar precios de carnes en supermercados de Colombia. ¡Ahorra tiempo y dinero!</p>
+    </section>
+
+    <section id="como-funciona">
+        <h2>¿Cómo funciona?</h2>
+        <p>Con NOAH, podrás ver los precios de carnes de varios supermercados en un solo lugar, además de conocer la calidad y el uso recomendado de cada corte.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes preguntas o deseas más información, ¡contáctanos!</p>
+        <form action="enviar-formulario.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 NOAH - Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #ff0000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
